@@ -1,0 +1,19 @@
+.idea
+*.iml
+target/
+build/
+.gradle/
+
+# eclipse stuff
+.classpath
+.project
+.settings/
+
+# verify logs
+verify.log
+log
+jaxrs/.DS_Store
+.DS_Store
+*.db
+
+
