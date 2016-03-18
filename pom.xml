@@ -41,7 +41,6 @@
             <jvmArguments>
               <jvmArgument>-Xmx128m</jvmArgument>
             </jvmArguments>
-            <useUberJar>true</useUberJar>
           </configuration>
           <executions>
             <execution>
@@ -55,30 +54,6 @@
     </pluginManagement>
   </build>
 
-  <profiles>
-    <profile>
-      <id>jgroups</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <dependencies>
-        <dependency>
-          <groupId>org.wildfly.swarm</groupId>
-          <artifactId>topology-jgroups</artifactId>
-        </dependency>
-      </dependencies>
-    </profile>
-    <profile>
-      <id>openshift</id>
-      <dependencies>
-        <dependency>
-          <groupId>org.wildfly.swarm</groupId>
-          <artifactId>topology-openshift</artifactId>
-        </dependency>
-      </dependencies>
-    </profile>
-  </profiles>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -91,14 +66,8 @@
     </dependencies>
   </dependencyManagement>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.wildfly.swarm</groupId>
-      <artifactId>ribbon</artifactId>
-    </dependency>
-  </dependencies>
-
   <modules>
     <module>chaining</module>
+    <module>hystrix-dashboard</module>
   </modules>
 </project>
