@@ -32,8 +32,7 @@
         <artifactId>wildfly-swarm-plugin</artifactId>
         <configuration>
           <properties>
-            <swarm.port.offset>6</swarm.port.offset>
-            <swarm.app.artifact>aloha.war</swarm.app.artifact>
+            <swarm.port.offset>4</swarm.port.offset>
           </properties>
         </configuration>
         <executions>

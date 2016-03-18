@@ -32,7 +32,7 @@
         <artifactId>wildfly-swarm-plugin</artifactId>
         <configuration>
           <properties>
-            <swarm.port.offset>5</swarm.port.offset>
+            <swarm.port.offset>3</swarm.port.offset>
           </properties>
         </configuration>
         <executions>
