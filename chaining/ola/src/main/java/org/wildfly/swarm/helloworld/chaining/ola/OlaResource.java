@@ -35,7 +35,7 @@ public class OlaResource {
     @GET
     @Path("/ola/{name}")
     @Produces(MediaType.APPLICATION_JSON)
-    public String sayHello(@PathParam("name") String name, @Suspended AsyncResponse asyncResponse) {
+    public void sayHello(@PathParam("name") String name, @Suspended AsyncResponse asyncResponse) {
         Observable<ByteBuf> obs = AlohaService.INSTANCE.aloha(name).observe();
 
         obs.subscribe(
@@ -57,7 +57,5 @@ public class OlaResource {
                     asyncResponse.resume(err);
                 }
         );
-
-        return "Ola " + name;
     }
 }
