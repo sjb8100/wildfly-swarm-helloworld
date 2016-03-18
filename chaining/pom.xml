@@ -28,6 +28,7 @@
     <module>aloha</module>
     <module>ola</module>
     <module>hola</module>
+    <module>hello</module>
   </modules>
 
   <profiles>
