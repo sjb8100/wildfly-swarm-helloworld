@@ -18,6 +18,8 @@
   <packaging>war</packaging>
 
   <build>
+    <finalName>ola</finalName>
+
     <plugins>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
